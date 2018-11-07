@@ -18,6 +18,14 @@ zuul:
       path: /authors/logout
       serviceId: authentication-service
       stripPrefix: false
+    validate:
+      path: /authors/validate
+      serviceId: authentication-service
+      stripPrefix: false
+    authors:
+      path: /authors
+      serviceId: registration-service
+      stripPrefix: false
 #    offices:
 #      path: /offices/**
 #      serviceId: user-service
